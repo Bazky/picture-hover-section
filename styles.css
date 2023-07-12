@@ -1,0 +1,39 @@
+:root {
+  --color-primary: #c6c6c6;
+  --color-secondary: #000;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 250px 300px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li:hover {
+  color: var(--color-secondary);
+}
+
+.writting__list {
+  color: var(--color-primary);
+  font-family: Inter tight;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+}
+
+span:nth-child(n + 1) {
+  font-size: 20px;
+  font-weight: 500;
+}
