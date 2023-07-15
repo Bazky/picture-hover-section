@@ -7,6 +7,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 250px 300px;
+  position: relative;
 }
 
 ul {
@@ -17,6 +18,53 @@ ul {
 
 li:hover {
   color: var(--color-secondary);
+}
+
+li:first-child:hover::after {
+  content: url("./images/1.png");
+  position: absolute;
+  top: 0;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+li:nth-child(2):hover::after {
+  content: url("./images/2.png");
+  position: absolute;
+  margin-left: 100px;
+}
+
+li:nth-child(3):hover::after {
+  content: url("./images/3.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 300px;
+}
+
+li:nth-child(4):hover::after {
+  content: url("./images/4.png");
+  position: absolute;
+  top: 0;
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+li:nth-child(5):hover::after {
+  content: url("./images/5.png");
+  position: absolute;
+  top: 0;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+li:nth-child(6):hover::after {
+  content: url("./images/6.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 200px;
+  margin-left: 500px;
 }
 
 .writting__list {
@@ -36,4 +84,6 @@ li:hover {
 span:nth-child(n + 1) {
   font-size: 20px;
   font-weight: 500;
+  display: inline-flex;
+  margin-right: 5px;
 }
